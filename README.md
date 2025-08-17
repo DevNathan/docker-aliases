@@ -1,6 +1,8 @@
 # docker-aliases
 내가 자주 쓰는 도커 명령어 별칭들
 
+쉘 초기화 스크립트에다가 넣어서 사용하면 됨
+
 ```sh
 # 컨테이너
 alias dps='docker ps'                         # 실행 중인 컨테이너 목록
@@ -28,5 +30,3 @@ alias dprune='docker system prune -af'        # 시스템 청소
 
 alias dstate='docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
 ```
-
-아치 리눅스 쓰는데 이거 만들어 놓고 삭제하는 일 많아서 걍 올려 놓음
