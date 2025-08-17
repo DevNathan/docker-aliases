@@ -1,2 +1,32 @@
 # docker-aliases
 내가 자주 쓰는 도커 명령어 별칭들
+
+```sh
+# 컨테이너
+alias dps='docker ps'                         # 실행 중인 컨테이너 목록
+alias dpa='docker ps -a'                      # 모든 컨테이너 목록
+alias dstart='docker start'                   # 컨테이너 시작
+alias dstop='docker stop'                     # 컨테이너 중지
+alias drm='docker rm'                         # 컨테이너 삭제
+alias dlog='docker logs -f'                   # 로그 스트리밍
+alias dexec='docker exec -it'                 # 컨테이너 안 들어가기
+
+# 이미지
+alias dimg='docker images'                    # 이미지 리스트
+alias drmi='docker rmi'                       # 이미지 삭제
+alias dbuild='docker build -t'                # 이미지 빌드
+alias dpush='docker push'                     # 이미지 푸시
+alias dpull='docker pull'                     # 이미지 가져오기
+
+# 그외
+alias dnet='docker network ls'                # 네트워크 목록
+alias dvol='docker volume ls'                 # 볼륨 목록
+alias dinspect='docker inspect'               # 상세 상태 확인
+alias dstats='docker stats --no-stream'       # 리소스 사용량 체크
+alias dtop='docker top'                       # 컨테이너 프로세스 확인
+alias dprune='docker system prune -af'        # 시스템 청소
+
+alias dstate='docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
+```
+
+아치 리눅스 쓰는데 이거 만들어 놓고 삭제하는 일 많아서 걍 올려 놓음
