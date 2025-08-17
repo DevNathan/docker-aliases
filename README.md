@@ -5,6 +5,7 @@
 
 ```sh
 # 컨테이너
+alias drun='docker container run'             # 도커 run
 alias dps='docker ps'                         # 실행 중인 컨테이너 목록
 alias dpa='docker ps -a'                      # 모든 컨테이너 목록
 alias dstart='docker start'                   # 컨테이너 시작
