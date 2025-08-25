@@ -5,6 +5,7 @@
 
 ```sh
 # 컨테이너
+alias dcon='docker container'
 alias drun='docker container run'             # 도커 run
 alias dps='docker ps'                         # 실행 중인 컨테이너 목록
 alias dpa='docker ps -a'                      # 모든 컨테이너 목록
@@ -15,7 +16,8 @@ alias dlog='docker logs -f'                   # 로그 스트리밍
 alias dexec='docker exec -it'                 # 컨테이너 안 들어가기
 
 # 이미지
-alias dimg='docker images'                    # 이미지 리스트
+alias dimgs='docker images'                    # 이미지 리스트
+alias dimg='docker image'
 alias drmi='docker rmi'                       # 이미지 삭제
 alias dbuild='docker build -t'                # 이미지 빌드
 alias dpush='docker push'                     # 이미지 푸시
@@ -28,6 +30,9 @@ alias dinspect='docker inspect'               # 상세 상태 확인
 alias dstats='docker stats --no-stream'       # 리소스 사용량 체크
 alias dtop='docker top'                       # 컨테이너 프로세스 확인
 alias dprune='docker system prune -af'        # 시스템 청소
+
+# compose
+alias docpose='docker compose'
 
 alias dstate='docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"'
 ```
